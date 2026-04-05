@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端开发者 | 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with name and tagline -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">{ }</span>
+                <h1 class="logo-text">DEV</h1>
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link active">关于</a>
+                <a href="#skills" class="nav-link">技能</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">你好，我是 <span class="highlight">张明</span></h2>
+                    <p class="hero-subtitle">专注于现代Web技术的前端开发者</p>
+                    <p class="hero-desc">我使用 React、TypeScript 等前沿技术构建快速、可访问且像素级完美的用户界面。</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">联系我</a>
+                        <a href="#about" class="btn btn-outline">了解更多</a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-container">
+                        <div class="avatar-img">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section about">
+                <h2 class="section-title"><span class="section-title-num">01</span> 关于我</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>我是一名充满热情的前端开发者，拥有超过5年的经验，致力于创造既美观又实用的数字产品。我擅长将复杂问题转化为简单直观的设计。</p>
+                        <p>我相信编写干净、可维护的代码，并持续跟进最新的Web标准和最佳实践。不编码的时候，我喜欢参与开源项目、撰写技术博客文章以及指导初级开发者。</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">项目交付</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">年经验</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">客户满意度</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">about-me.js</span>
+                            </div>
+                            <div class="window-content">
+                                <pre><code class="language-javascript">const developer = {
+  name: "张明",
+  role: "前端开发者",
+  location: "上海，中国",
+  skills: ["React", "TypeScript", "Next.js",
+           "GraphQL", "Tailwind CSS", "Node.js"],
+  hobbies: ["摄影", "徒步", "3D打印"],
+  motto: "构建有意义的东西"
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills">
+                <h2 class="section-title"><span class="section-title-num">02</span> 技术与技能</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-palette"></i> 前端</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">React / Next.js</span><span class="skill-level expert">精通</span></li>
+                            <li><span class="skill-name">TypeScript</span><span class="skill-level expert">精通</span></li>
+                            <li><span class="skill-name">Vue.js / Nuxt.js</span><span class="skill-level advanced">熟练</span></li>
+                            <li><span class="skill-name">HTML5 / CSS3</span><span class="skill-level expert">精通</span></li>
+                            <li><span class="skill-name">Tailwind CSS</span><span class="skill-level advanced">熟练</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-server"></i> 后端与工具</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Node.js / Express</span><span class="skill-level advanced">熟练</span></li>
+                            <li><span class="skill-name">GraphQL / REST</span><span class="skill-level advanced">熟练</span></li>
+                            <li><span class="skill-name">MongoDB / PostgreSQL</span><span class="skill-level intermediate">掌握</span></li>
+                            <li><span class="skill-name">Git / GitHub</span><span class="skill-level expert">精通</span></li>
+                            <li><span class="skill-name">Docker / CI/CD</span><span class="skill-level intermediate">掌握</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-bullseye"></i> 软技能</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">团队领导</span><span class="skill-level advanced">熟练</span></li>
+                            <li><span class="skill-name">沟通能力</span><span class="skill-level expert">精通</span></li>
+                            <li><span class="skill-name">解决问题</span><span class="skill-level expert">精通</span></li>
+                            <li><span class="skill-name">项目管理</span><span class="skill-level intermediate">掌握</span></li>
+                            <li><span class="skill-name">指导他人</span><span class="skill-level advanced">熟练</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact & QR Code Section -->
+            <section id="contact" class="section contact">
+                <h2 class="section-title"><span class="section-title-num">03</span> 联系我</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-title">让我们联系</h3>
+                        <p class="contact-desc">我始终对新的机会、有趣的项目或仅仅是技术讨论持开放态度。</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="contact-label">邮箱</span>
+                                    <a href="mailto:zhangming@example.com" class="contact-value">zhangming@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="contact-label">电话</span>
+                                    <a href="tel:+8613812345678" class="contact-value">+86 138 1234 5678</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/zhangming" target="_blank" class="contact-value">github.com/zhangming</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/zhangming" target="_blank" class="contact-value">linkedin.com/in/zhangming</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-dev"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                    <div class="qr-section">
+                        <h3 class="qr-title">扫码联系</h3>
+                        <p class="qr-desc">扫描此二维码保存我的联系信息或访问我的个人作品集。</p>
+                        <div class="qr-container">
+                            <!-- QR Code Placeholder - Replace with your own QR code image -->
+                            <div class="qr-placeholder">
+                                <div class="qr-code">
+                                    <!-- This is a placeholder QR code pattern -->
+                                    <div class="qr-pattern"></div>
+                                    <div class="qr-instruction">
+                                        <i class="fas fa-qrcode"></i>
+                                        <p>你的二维码在这里</p>
+                                        <small>替换为实际二维码图片</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qr-notes">
+                                <p><strong>如何替换：</strong> 使用任意在线生成器生成您的二维码，保存为图片，然后将 <code>qr-pattern</code> div 替换为 <code>&lt;img src="your-qr.png" alt="QR Code"&gt;</code> 标签。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer-text">© 2023 张明. 保留所有权利。 | 用心与代码构建</p>
+            <p class="footer-note">这是一个模板个人页面。请替换为您自己的信息。</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple navigation active state
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
